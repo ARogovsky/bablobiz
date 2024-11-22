@@ -1,4 +1,19 @@
 ---
+import { Icon } from "astro-icon/components";
+import { getEntryBySlug } from "astro:content";
+
+const { data } = await getEntryBySlug("components", "components");
+const logos = data.logos;
+---
+
+<div class="mt-24">
+  <h2 class="text-center text-slate-500">{logos.title}</h2>
+  <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+    {logos.logos.map((logo) => <Icon class="size-8 md:size-12" name={logo} />)}
+  </div>
+</div>
+
+<!-- ---
 // @ts-ignore
 import { Icon } from "astro-icon/components";
 ---
@@ -15,4 +30,4 @@ import { Icon } from "astro-icon/components";
     <Icon class="size-8 md:size-12" name="simple-icons:vercel" />
 
   </div>
-</div>
+</div> -->

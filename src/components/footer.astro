@@ -1,12 +1,34 @@
+---
+import { getEntryBySlug } from "astro:content";
+
+const { data } = await getEntryBySlug("components", "components");
+const footer = data.footer;
+const currentYear = new Date().getFullYear();
+---
+
 <footer class="my-20">
+  <p class="text-center text-sm text-slate-500">
+    {footer.text.replace("{year}", currentYear)}
+  </p>
+  <p class="text-center text-xs text-slate-500 mt-1">
+    Made by <a
+      href={footer.credits.url}
+      target="_blank"
+      rel="noopener"
+      class="hover:underline">{footer.credits.text}</a
+    >
+  </p>
+</footer>
+
+<!-- <footer class="my-20">
   <p class="text-center text-sm text-slate-500">
     Copyright © {new Date().getFullYear()} Astroship. All rights reserved.
   </p>
-  <!--
+  
     Can we ask you a favor 🙏
     Please keep this backlink on your website if possible.
     or Purchase a commercial license from https://web3templates.com
-  -->
+ 
   <p class="text-center text-xs text-slate-500 mt-1">
     Made by <a
       href="https://web3templates.com"
@@ -16,4 +38,4 @@
       Web3Templates
     </a>
   </p>
-</footer>
+</footer> -->
