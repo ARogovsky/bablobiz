@@ -119,5 +119,8 @@ navbar:
       path: "/contact"
     - title: "Pro Version"
       path: "https://astroship-pro.web3templates.com/"
-      badge: true
+      badge: "New"
+  actions:
+     login: "Log in"
+     signup: "Sign up"
 ---

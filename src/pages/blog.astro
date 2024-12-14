@@ -1,9 +1,17 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntryBySlug } from "astro:content";
 import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+
+const blogPageContent = await getEntryBySlug("blogPage", "blog");
+
+if (!blogPageContent) {
+  throw new Error(
+    "Blog page content not found. Ensure 'blog.md' exists in the 'pages' collection.",
+  );
+}
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
@@ -16,12 +24,12 @@ publishedBlogEntries.sort(function (a, b) {
 });
 ---
 
-<Layout title="Blog">
+<Layout title={blogPageContent.data.title}>
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Our Blog</Fragment>
+      <Fragment slot="title">{blogPageContent.data.introHeading}</Fragment>
       <Fragment slot="desc">
-        We write about building startups and thoughts going on our mind.
+        {blogPageContent.data.introText}
       </Fragment>
     </Sectionhead>
     <main class="mt-16">
