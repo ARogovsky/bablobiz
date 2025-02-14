@@ -42,22 +42,22 @@ features:
   items:
     - title: "AI-Driven Call Analytics"
       description: "Leverage AI to analyze call quality, extract insights, and improve performance."
-      icon: "bx:bxs-bar-chart-alt-2"
+      icon: "simple-icons:openai"
     - title: "Manager Training"
       description: "Provide managers with actionable insights to refine their negotiation and leadership skills."
-      icon: "bx:bxs-user-check"
+      icon: "simple-icons:hubspot"
     - title: "Enhanced Lead Optimization"
       description: "Optimize your business leads with intelligent prioritization and AI-powered recommendations."
-      icon: "bx:bxs-rocket"
+      icon: "simple-icons:googleanalytics"
     - title: "Scalable Integrations"
       description: "Seamlessly integrate BABLO with your existing CRM, telephony, and analytics tools."
-      icon: "bx:bxs-plug"
+      icon: "simple-icons:salesforce"
     - title: "Real-Time Insights"
       description: "Monitor performance and make informed decisions with live data dashboards."
-      icon: "bx:bxs-analyse"
+      icon: "simple-icons:aws"
     - title: "AI-Powered Assistance"
       description: "Provide your team with an AI-driven assistant to improve workflow and communication."
-      icon: "bx:bxs-bot"
+      icon: "simple-icons:zapier"
 
 footer:
   text: "Copyright © {year} BABLO.biz. All rights reserved."
@@ -82,11 +82,11 @@ hero:
 logos:
   title: "Trusted by Top Technologies"
   logos:
-    - "simple-icons:ai"
-    - "simple-icons:crm"
-    - "simple-icons:analytics"
-    - "simple-icons:cloud"
-    - "simple-icons:automation"
+    - "simple-icons:openai"
+    - "simple-icons:salesforce"
+    - "simple-icons:googleanalytics"
+    - "simple-icons:aws"
+    - "simple-icons:zapier"
 
 sectionhead:
   defaultTitle: "Your AI-Powered Advantage"
