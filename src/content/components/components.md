@@ -46,7 +46,7 @@ features:
      icon: "simple-icons:microsoftteams"
    - title: "Enhanced Lead Optimization"
      description: "Optimize your business leads with intelligent prioritization and AI-powered recommendations."
-     icon: "simple-icons:google-analytics"
+     icon: "simple-icons:googleanalytics"
    - title: "Scalable Integrations"
      description: "Seamlessly integrate BABLO with your existing CRM, telephony, and analytics tools."
      icon: "simple-icons:salesforce"
@@ -79,7 +79,7 @@ logos:
  logos:
    - "simple-icons:openai"
    - "simple-icons:salesforce"
-   - "simple-icons:google-analytics"
+   - "simple-icons:googleanalytics"
    - "simple-icons:amazonwebservices"
    - "simple-icons:microsoft"
 sectionhead:
