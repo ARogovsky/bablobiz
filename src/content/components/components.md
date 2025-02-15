@@ -52,7 +52,7 @@ features:
      icon: "simple-icons:salesforce"
    - title: "Real-Time Insights"
      description: "Monitor performance and make informed decisions with live data dashboards."
-     icon: "simple-icons:amazonwebservices"
+     icon: "simple-icons:grafana"
    - title: "AI-Powered Assistance"
      description: "Provide your team with an AI-driven assistant to improve workflow and communication."
      icon: "simple-icons:microsoft"
@@ -80,7 +80,7 @@ logos:
    - "simple-icons:openai"
    - "simple-icons:salesforce"
    - "simple-icons:googleanalytics"
-   - "simple-icons:amazonwebservices"
+   - "simple-icons:grafana"
    - "simple-icons:microsoft"
 sectionhead:
  defaultTitle: "Your AI-Powered Advantage"
