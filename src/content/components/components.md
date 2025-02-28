@@ -31,8 +31,8 @@ cta:
  title: "Optimize your business leads with AI"
  description: "Leverage Business AI to better assist your team and optimize lead conversion with cutting-edge tools."
  button:
-   text: "Learn More"
-   href: "#features"
+   text: "Demo"
+   href: "/demo/"
    style: "inverted"
 features:
  title: "Why Choose BABLO?"
@@ -65,15 +65,15 @@ hero:
  title: "Transform Your Business with BABLO"
  description: "Business AI – Better Assistant for Leads Optimization. Enhance call analytics, train managers, and drive results with AI."
  buttons:
-   - text: "Get Started"
-     href: "#cta"
+   - text: "Try Now"
+     href: "/demo"
      icon: "bx:bxs-rocket"
      style: "primary"
    - text: "Contact Us"
-     href: "#contactform"
+     href: "/contact"
      icon: "bx:bxs-envelope"
      style: "outline"
- heroImage: "../assets/hero-bablo.png"
+ heroImage: "../assets/hero.png"
 logos:
  title: "Trusted by Top Technologies"
  logos:
@@ -88,21 +88,15 @@ sectionhead:
 navbar:
  brand:
    name: "BABLO"
-   logo: "/assets/logo-bablo.png"
+   logo: "/"
  menuitems:
-   - title: "Features"
-     path: "#features"
-   - title: "Pricing"
-     path: "/pricing"
+   - title: "Try Now"
+     path: "/demo"
+     badge: "Free"
    - title: "About"
      path: "/about"
    - title: "Blog"
      path: "/blog"
    - title: "Contact"
-     path: "#contactform"
-   - title: "Login"
-     path: "/login"
- actions:
-    login: "Log in"
-    signup: "Sign up"
+     path: "/contact"
 ---

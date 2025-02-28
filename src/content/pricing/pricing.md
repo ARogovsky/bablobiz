@@ -1,49 +1,37 @@
 ---
 draft: false
-title: "Pricing"
-description: "Simple & Predictable pricing. No Surprises."
+title: "Try Free"
+description: "Check out how BABLO works right now! No payment required."
 plans:
-  - name: "Personal"
-    price: "Free"
+  - name: "Evaluate text dialogue"
+    price: "1-3 minutes"
     popular: false
     features:
-      - "Lifetime free"
-      - "Up to 3 users"
-      - "Unlimited Pages"
-      - "Astro Sub domain"
-      - "Basic Integrations"
-      - "Community Support"
+      - "Paste text dialogue"
+      - "Paste your script"
+      - "Get free suggestions"
     button:
-      text: "Get Started"
+      text: "Evaluate now"
       link: "/"
-  - name: "Startup"
+  - name: "Analyze tone of voice"
     price:
-      monthly: "$19"
-      annual: "$16"
-      discount: "10%"
-      original: "$24"
+      monthly: "10-20 minutes"
     popular: true
     features:
-      - "All Free Features"
-      - "Up to 20 users"
-      - "20 Custom domains"
-      - "Unlimited Collaborators"
-      - "Advanced Integrations"
-      - "Priority Support"
+      - "Upload audio record"
+      - "Upload your script"
+      - "Get evaluation tone of voice"
     button:
-      text: "Get Started"
+      text: "Analyze now"
       link: "#"
-  - name: "Enterprise"
-    price: "Custom"
+  - name: "Build/Improve script"
+    price: "20-30 minutes"
     popular: false
     features:
-      - "All Pro Features"
-      - "Unlimited Custom domains"
-      - "99.99% Uptime SLA"
-      - "SAML & SSO Integration"
-      - "Dedicated Account Manager"
-      - "24/7 Phone Support"
+      - "Upload audio record"
+      - "Upload your USP"
+      - "Add existed script (optional)"
     button:
-      text: "Contact us"
+      text: "Generate now"
       link: "/contact"
 ---
