@@ -12,7 +12,7 @@ plans:
       - "Get free suggestions"
     button:
       text: "Evaluate now"
-      link: "/"
+      link: "#demo-form"
   - name: "Analyze tone of voice"
     price:
       monthly: "10-20 minutes"
@@ -23,7 +23,7 @@ plans:
       - "Get evaluation tone of voice"
     button:
       text: "Analyze now"
-      link: "#"
+      link: "#demo-form"
   - name: "Build/Improve script"
     price: "20-30 minutes"
     popular: false
@@ -33,5 +33,5 @@ plans:
       - "Add existed script (optional)"
     button:
       text: "Generate now"
-      link: "/contact"
+      link: "#demo-form"
 ---

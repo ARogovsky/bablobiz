@@ -1,14 +1,12 @@
 ---
-import Contactform from "@components/contactform.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
-import { Icon } from "astro-icon/components";
 import { getEntryBySlug } from "astro:content";
 
 // Fetch contact data
 const contactData = await getEntryBySlug("contact", "contact");
-const { title, description, heading, intro, contactDetails } = contactData.data;
+const { title, description } = contactData.data;
 ---
 
 <Layout title={title}>
@@ -18,28 +16,9 @@ const { title, description, heading, intro, contactDetails } = contactData.data;
       <Fragment slot="desc">{description}</Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <div>
-        <h2 class="font-medium text-2xl text-gray-800">{heading}</h2>
-        <p class="text-lg leading-relaxed text-slate-500 mt-3">{intro}</p>
-        <div class="mt-5">
-          {
-            contactDetails.map((detail) => (
-              <div class="flex items-center mt-2 space-x-2 text-gray-600">
-                <Icon class="text-gray-400 w-4 h-4" name={detail.icon} />
-                {detail.link ? (
-                  <a href={detail.link}>{detail.text}</a>
-                ) : (
-                  <span>{detail.text}</span>
-                )}
-              </div>
-            ))
-          }
-        </div>
-      </div>
-      <div>
-        <Contactform />
-      </div>
+    <div>
+      <div data-tf-live="01JNG712FY7EG5XWECA8EJ335F"></div>
+      <script is:inline src="//embed.typeform.com/next/embed.js"></script>
     </div>
   </Container>
 </Layout>

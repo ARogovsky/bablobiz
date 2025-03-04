@@ -16,7 +16,35 @@ const { title, heading, description } = pageData.data;
           {heading}
         </h1>
         <p class="text-lg mt-4 text-slate-600">{description}</p>
+        <div class="mt-8">
+          <p class="text-lg mb-4">Redirecting to home page in <span id="countdown">5</span> seconds...</p>
+          <a
+            href="/"
+            class="bg-black rounded-md text-white px-6 py-3 hover:bg-gray-800 transition-colors inline-block">
+            Go Home Now
+          </a>
+        </div>
       </div>
     </div>
   </Container>
 </Layout>
+
+<script is:inline>
+  let timeLeft = 5;
+  const countdownElement = document.getElementById('countdown');
+  
+  const countdown = setInterval(() => {
+    timeLeft--;
+    countdownElement.textContent = timeLeft;
+    
+    if (timeLeft <= 0) {
+      clearInterval(countdown);
+      window.location.href = '/';
+    }
+  }, 1000);
+
+  // Fallback redirect after 5 seconds
+  setTimeout(() => {
+    window.location.href = '/';
+  }, 5000);
+</script>
